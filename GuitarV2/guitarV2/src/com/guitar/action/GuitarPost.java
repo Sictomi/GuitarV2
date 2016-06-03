@@ -11,10 +11,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.guitar.dao.JDBCsqlite;
 import com.guitar.model.Guitar;
 import com.guitar.model.GuitarSpec;
 import com.guitar.model.Inventory;
-import com.guitar.tool.JDBCsqlite;
 
 /**
  * Servlet implementation class GuitarPost
@@ -47,8 +47,8 @@ public class GuitarPost extends HttpServlet implements Servlet {
 		
 		String builder = request.getParameter("规格");
 		String type = request.getParameter("分类");
-		String backwood = request.getParameter("backwood");
-		String topwood = request.getParameter("topwood");
+		String backwood = request.getParameter("背侧板材料");
+		String topwood = request.getParameter("面板材料");
 		
 
 		//根据查询条件，分装成一个查询对象GuitarSpec
@@ -75,7 +75,7 @@ public class GuitarPost extends HttpServlet implements Servlet {
 				ResultSet rs = ps.executeQuery();
 				
 				while(rs.next()){			
-					inventory.addGuitar(rs.getString(1),rs.getDouble(4),rs.getString(6),rs.getInt(8), new GuitarSpec(rs.getString(5),rs.getString(7),rs.getString(2),rs.getString(3)));
+					inventory.addGuitar(rs.getString(1),rs.getDouble(4),rs.getString(6), new GuitarSpec(rs.getString(5),rs.getString(7),rs.getString(2),rs.getString(3)));
 				}
 				if(rs != null){
 					rs.close();

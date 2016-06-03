@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>查询条件</title>
 <style type="text/css">
 	.box{display:inline;}
 </style>
@@ -30,6 +30,8 @@
 	 			<option value="民谣吉他">民谣吉他</option>
 	 			<option value="电吉他">电吉他</option>
 	 			<option value="尤克里里">尤克里里</option>
+	 			<option value="尤克里里">古典吉他</option>
+	 			
 	 		</select>
 	 		
 	 		<label>背侧板材料:</label>

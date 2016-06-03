@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 
 import com.guitar.model.GuitarSpec;
 import com.guitar.model.Inventory;
-import com.guitar.tool.JDBCsqlite;
 
 public class InventoryDao {
 	public InventoryDao(){
@@ -22,7 +21,7 @@ public class InventoryDao {
 		ResultSet rs = ps.executeQuery();
 		
 		while(rs.next()){			
-			inventory.addGuitar(rs.getString(1),rs.getDouble(4),rs.getString(6),rs.getInt(8), new GuitarSpec(rs.getString(5),rs.getString(7),rs.getString(2),rs.getString(3)));
+			inventory.addGuitar(rs.getString(1),rs.getDouble(4),rs.getString(6), new GuitarSpec(rs.getString(5),rs.getString(7),rs.getString(2),rs.getString(3)));
 		}
 		if(rs != null){
 			rs.close();

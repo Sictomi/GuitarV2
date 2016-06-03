@@ -11,26 +11,23 @@
 <body>
 	<table style="border:1px solid #CFCFCF;">
 	 		<tr>
-	 			<th>serialNumber</th>
-	 			<th>builder</th>
-	 			<th>backWood</th>
-	 			<th>topWood</th>
-	 			<th>type</th>
-	 			<th>model</th>
-	 			<th>price</th>
-	 			<th>numStrings</th>
+	 			<th>产品编号</th>
+	 			<th>规格</th>
+	 			<th>背侧板材料</th>
+	 			<th>面板材料</th>
+	 			<th>分类</th>
+	 			<th>价格</th>
+	 			
 	 		</tr>
-	 		
 	 	<c:forEach var="matchingGuitar" items="${requestScope.matchingGuitar}"> 
 	 		<tr>
 	 			<td>${matchingGuitar.serialNumber}</td>
-	 			<td>${matchingGuitar.spec.builder}</td>
-	 			<td>${matchingGuitar.spec.backWood}</td>
-	 			<td>${matchingGuitar.spec.topWood}</td>
 	 			<td>${matchingGuitar.spec.type}</td>
+	 			<td>${matchingGuitar.spec.topWood}</td>
+	 			<td>${matchingGuitar.spec.backWood}</td>
 	 			<td>${matchingGuitar.model}</td>
 	 			<td>${matchingGuitar.price}</td>
-	 			<td>${matchingGuitar.numStrings}</td>
+	 			
 	 		</tr>			
 	 	</c:forEach>
 

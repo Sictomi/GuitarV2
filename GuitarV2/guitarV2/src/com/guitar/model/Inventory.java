@@ -11,8 +11,8 @@ public class Inventory {
 		setGuitars(new LinkedList<Guitar>());
 	}
 	
-	public void addGuitar(String serialNumber, double price, String model, int numStrings, GuitarSpec spec) {
-		Guitar guitar = new Guitar(serialNumber, price, model, numStrings, spec);
+	public void addGuitar(String serialNumber, double price, String model, GuitarSpec spec) {
+		Guitar guitar = new Guitar(serialNumber, price, model,  spec);
 		getGuitars().add(guitar);
 	}
 		

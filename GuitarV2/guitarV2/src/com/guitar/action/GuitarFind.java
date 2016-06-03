@@ -18,7 +18,7 @@ public class GuitarFind {
 	    initializeInventory(inventory);
 
 	    GuitarSpec whatErinLikes = 
-	    	      new GuitarSpec("Fender", "Electric", "Alder", "Alder");
+	    	      new GuitarSpec("ÃñÒ¥¼ªËû", "µç¼ªËû", "ÓÈ¿ËÀïÀï", "¹Åµä¼ªËû");
 	    List matchingGuitars = inventory.search(whatErinLikes);
 	    if (!matchingGuitars.isEmpty()) {
 	      System.out.println("Erin, you might like these guitars:");
@@ -38,38 +38,26 @@ public class GuitarFind {
 	}
 	
 	private static void initializeInventory(Inventory inventory) {
-	    inventory.addGuitar("11277", 3999.95, "CJ",  6,
-	      new GuitarSpec("Collings", "Acoustic", "Indian_Rosewood", "Sitka"));
+	    inventory.addGuitar("0001", 3999.95, "CJ", 
+	      new GuitarSpec("21´ç", "»¨ÀæÄ¾", "°ØÄ¾", "Sitka"));
 	    
-	    inventory.addGuitar("V95693", 1499.95, "Stratocastor", 6,
-	      new GuitarSpec("Fender", "Electric", "Alder", "Alder"));
+	    inventory.addGuitar("0003", 1499.95, "Stratocastor", 
+	      new GuitarSpec("23´ç", "ÎàÍ©Ä¾", "°×ËÉÄ¾", "Alder"));
 	    
-	    inventory.addGuitar("V9512", 1549.95,  "Stratocastor", 6,
-	      new GuitarSpec("Fender", "Electric", "Alder", "Alder"));
+	    inventory.addGuitar("0004", 1549.95,  "Stratocastor",  
+	      new  GuitarSpec("26´ç", "èëÄ¾", "»¨ÀæÄ¾", "Alder"));
 	    
-	    inventory.addGuitar("122784", 5495.95,  "D-18", 6,
-	      new GuitarSpec("Martin", "Acoustic", "Mahogany", "Adirondack"));
+	    inventory.addGuitar("0006", 5495.95,  "D-18", 
+	      new GuitarSpec("28´ç", "»¨ÀæÄ¾", "é²Ä¾", "Adirondack"));
 	    
-	    inventory.addGuitar("76531", 6295.95,  "OM-28", 6,
-	      new GuitarSpec("Martin", "Acoustic", "Brazilian_Rosewood", "Adirondack"));
+	    inventory.addGuitar("0007", 6295.95,  "OM-28", 
+	      new GuitarSpec("21´ç", "èÖÄ¾", "ÎàÍ©Ä¾", "Adirondack"));
 	    
-	    inventory.addGuitar("70108276", 2295.95, "Les Paul", 6,
-	      new GuitarSpec("Gibson", "Electric", "Mahogany", "Mahogany"));
+	    inventory.addGuitar("0009", 2295.95, "Les Paul", 
+	      new GuitarSpec("36´ç", "ÎàÍ©Ä¾", "»¨ÀæÄ¾", "Mahogany"));
 	    
-	    inventory.addGuitar("82765501", 1890.95, "SG '61 Reissue", 6, 
-	      new GuitarSpec("Gibson", "Electric", "Mahogany", "Mahogany"));
+	  
 	    
-	    inventory.addGuitar("77023", 6275.95, "D-28", 6, 
-	      new GuitarSpec("Martin", "Acoustic", "Brazilian_Rosewood", "Adirondack"));
-	    
-	    inventory.addGuitar("1092", 12995.95, "SJ", 12,
-	      new GuitarSpec("Olson", "Acoustic", "Indian_Rosewood", "Cedar"));
-	    
-	    inventory.addGuitar("566-62", 8999.95, "Cathedral", 12, 
-	      new GuitarSpec("Ryan", "Acoustic", "Cocobolo", "Cedar"));
-	    
-	    inventory.addGuitar("6 29584", 2100.95,  "Dave Navarro Signature", 6,
-	      new GuitarSpec("Prs", "Electric", "Mahogany", "Maple"));
 	  }
 
 }

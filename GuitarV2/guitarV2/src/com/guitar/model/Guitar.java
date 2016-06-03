@@ -4,14 +4,14 @@ public class Guitar {
 	private String serialNumber;
 	private double price;
 	private String model;
-	private int numStrings;
+	
 	GuitarSpec spec;
 	
-	public Guitar(String serialNumber, double price, String model, int numStrings, GuitarSpec spec) {
+	public Guitar(String serialNumber, double price, String model,  GuitarSpec spec) {
 		this.serialNumber = serialNumber;
 		this.price = price;
 		this.model = model;
-		this.numStrings = numStrings;
+		
 		this.spec = spec;
 	}
 
@@ -50,12 +50,4 @@ public class Guitar {
 		this.model = model;
 	}
 
-	public int getNumStrings() {
-		return numStrings;
-	}
-
-	public void setNumStrings(int numStrings) {
-		this.numStrings = numStrings;
-	}
-	
 }
